@@ -2,7 +2,7 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-git_status="#{pane_current_path}"
+git_status="#($CURRENT_DIR/scripts/get_git_status.sh)"
 placeholder="\#{git_status}"
 
 source $CURRENT_DIR/scripts/shared.sh
@@ -26,3 +26,4 @@ main() {
 }
 
 main
+
