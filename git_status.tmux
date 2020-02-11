@@ -5,6 +5,8 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 git_status="#(echo 'git status!')"
 placeholder="\#{git_status}"
 
+source $CURRENT_DIR/scripts/shared.sh
+
 do_interpolation() {
   local string="$1"
   local interpolated="${string/$placeholder/$git_status}"
