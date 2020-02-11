@@ -4,6 +4,8 @@
 
 Display git status.
 
+![screenshot](./screenshot.png)
+
 ## HOW TO USE
 
 ### If you are using tpm
