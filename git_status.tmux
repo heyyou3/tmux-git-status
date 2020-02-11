@@ -2,7 +2,7 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-git_status="git status!"
+git_status="#(echo 'git status!')"
 placeholder="\#{git_status}"
 
 do_interpolation() {
