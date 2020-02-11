@@ -22,3 +22,5 @@ main() {
   update_tmux_option "status-left"
   update_tmux_option "status-right"
 }
+
+main
