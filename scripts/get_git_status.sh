@@ -10,7 +10,7 @@ get_git_status() {
   local stage_st="$(git diff --staged --name-only | perl -nlE 'END{say "S:$."}')"
   local remote_st="$(git rev-list --count --left-right HEAD...@{upstream} 2>&1 | perl -anlE 'if(@F[0]=~/^[0-9]+$/ && @F[1]=~/^[0-9]+$/){say "+@F[0]-@F[1]"}else{say "+0 -0"}')"
 
-  printf "[$branch] [$change_st | $add_file_st | $stage_st] [$remote_st]"
+  printf "[$branch] [$change_st|$add_file_st|$stage_st] [$remote_st]"
 }
 
 main() {
